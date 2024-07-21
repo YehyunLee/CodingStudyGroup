@@ -30,4 +30,5 @@ def productExceptSelf(nums: list[int]) -> list[int]:
         postfix *= nums[i]
     return final
 
+
 print(productExceptSelf([1, 2, 3, 4]))  # [24, 12, 8, 6]
