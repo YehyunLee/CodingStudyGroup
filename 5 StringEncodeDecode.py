@@ -1,11 +1,11 @@
-def encode(self, strs: list[str]) -> str:
+def encode(strs: list[str]) -> str:
     res = ""
     for s in strs:
         res += str(len(s)) + "#" + s
     return res
 
 
-def decode(self, s: str) -> list[str]:
+def decode(s: str) -> list[str]:
     res = []
     i = 0
 
