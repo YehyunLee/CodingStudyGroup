@@ -16,3 +16,5 @@ class Solution:
         # Because of (n - 1) not in numSet
 
         # Space complexity: O(n)
+
+        # Core idea is to check if n - 1 is in the set and while loop of n + length in set
