@@ -20,3 +20,5 @@ def decode(s: str) -> list[str]:
         i = j
 
     return res
+
+    # Include length and # format

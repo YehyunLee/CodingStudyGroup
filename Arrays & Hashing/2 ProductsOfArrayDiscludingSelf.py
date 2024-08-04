@@ -6,7 +6,6 @@ def productExceptSelf(nums: list[int]) -> list[int]:
     #             final[number] *= nums[others]
     # return final
 
-
     # final = [1] * len(nums)
     # for i in range(len(nums)):
     #     prefix = 1
@@ -18,7 +17,6 @@ def productExceptSelf(nums: list[int]) -> list[int]:
     #     final[i] = prefix * postfix
     # return final
 
-
     final = [1] * (len(nums))
     prefix = 1
     for i in range(len(nums)):
@@ -29,6 +27,8 @@ def productExceptSelf(nums: list[int]) -> list[int]:
         final[i] *= postfix
         postfix *= nums[i]
     return final
+
+    # Prefix and postfix
 
 
 print(productExceptSelf([1, 2, 3, 4]))  # [24, 12, 8, 6]

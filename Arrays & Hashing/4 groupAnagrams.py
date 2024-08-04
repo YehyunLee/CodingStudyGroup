@@ -1,3 +1,6 @@
+from collections import defaultdict
+
+
 def groupAnagrams(strs: list[str]) -> list[list[str]]:
     ans = defaultdict(list)
 
@@ -7,5 +10,7 @@ def groupAnagrams(strs: list[str]) -> list[list[str]]:
             count[ord(c) - ord("a")] += 1  # Such that every index is 0~25
         ans[tuple(count)].append(s)
     return ans.values()
+
+    # Use ord substraction
 
     # run time is O(m * n)

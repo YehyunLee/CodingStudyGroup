@@ -12,5 +12,7 @@ def twoSum(nums: list[int], target: int) -> list[int]:
         prevMap[n] = i
     return []
 
+    # Use target (diff)
+
 
 print(twoSum([2, 7, 11, 15], 9))  # [0, 1]
