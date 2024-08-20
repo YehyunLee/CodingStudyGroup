@@ -1,4 +1,10 @@
 def encode(strs: list[str]) -> str:
+    """
+    Design an algorithm to encode a list of strings to a string.
+    The encoded string is then decoded back to the original list of strings.
+    :param strs:
+    :return:
+    """
     res = ""
     for s in strs:
         res += str(len(s)) + "#" + s
