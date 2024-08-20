@@ -1,4 +1,15 @@
 def topKFrequent(nums: list[int], k: int) -> list[int]:
+    """
+    Given an integer array nums and an integer k, return the k most frequent elements.
+    Example:
+    Input: nums = [1,1,1,2,2,3], k = 2
+    Output: [1,2]
+    Input: nums = [1,1,1,2,2,3,3,3,3], k = 3
+    Output: [3,1,2]
+    :param nums:
+    :param k:
+    :return:
+    """
     count = {}
     freq = [[] for _ in range(len(nums) + 1)]  # bucket sort
 
