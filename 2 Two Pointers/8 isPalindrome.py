@@ -1,4 +1,11 @@
 class Solution:
+    """
+    Q. Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+    Example:
+    Input:
+    s = "CataC"
+    Output: True
+    """
     def isPalindrome(self, s: str) -> bool:
         l, r = 0, len(s) - 1
 
